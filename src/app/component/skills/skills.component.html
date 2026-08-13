@@ -1,1 +1,223 @@
-<p>skills works!</p>
+<!-- =========================================
+                SKILLS SECTION
+========================================= -->
+
+<section id="skills" class="skills-section">
+
+    <div class="container">
+
+        <!-- ===============================
+                SECTION HEADER
+        ================================ -->
+
+        <div class="section-header text-center" data-aos="fade-up">
+
+            <span class="section-subtitle">
+                MY EXPERTISE
+            </span>
+
+            <h2 class="section-title">
+                Skills & Technologies
+            </h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+        <!-- ===============================
+                SEARCH BAR
+        ================================ -->
+
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-6">
+
+                <div class="search-box">
+
+                    <i class="fas fa-search"></i>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search Technology..."
+                        [(ngModel)]="searchText"
+                        (input)="filterSkills()">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===============================
+                FILTER BUTTONS
+        ================================ -->
+
+        <div class="filter-buttons mt-5">
+
+            <button
+                class="filter-btn"
+                [class.active]="selectedCategory === 'All'"
+                (click)="selectCategory('All')">
+
+                All
+
+            </button>
+
+            <button
+                class="filter-btn"
+                [class.active]="selectedCategory === 'Frontend'"
+                (click)="selectCategory('Frontend')">
+
+                Frontend
+
+            </button>
+
+            <button
+                class="filter-btn"
+                [class.active]="selectedCategory === 'Backend'"
+                (click)="selectCategory('Backend')">
+
+                Backend
+
+            </button>
+
+            <button
+                class="filter-btn"
+                [class.active]="selectedCategory === 'Tools'"
+                (click)="selectCategory('Tools')">
+
+                Tools
+
+            </button>
+
+            <button
+                class="filter-btn"
+                [class.active]="selectedCategory === 'Others'"
+                (click)="selectCategory('Others')">
+
+                Others
+
+            </button>
+
+        </div>
+
+        <!-- ===============================
+                SKILLS GRID
+        ================================ -->
+
+        <div class="row mt-5">
+
+            <div
+                class="col-lg-4 col-md-6 mb-4"
+                *ngFor="let skill of filteredSkills; trackBy: trackBySkill">
+
+                <div
+                    class="skill-card"
+                    data-aos="zoom-in">
+
+                    <!-- Icon -->
+
+                    <div class="skill-icon">
+
+                        <i [class]="skill.icon"></i>
+
+                    </div>
+
+                    <!-- Name -->
+
+                    <h4>
+
+                        {{ skill.name }}
+
+                    </h4>
+
+                    <!-- Category -->
+
+                    <span class="category">
+
+                        {{ skill.category }}
+
+                    </span>
+
+                    <!-- Progress -->
+
+                    <div class="progress mt-4">
+
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            [style.width.%]="skill.percentage"
+                            [attr.aria-valuenow]="skill.percentage"
+                            aria-valuemin="0"
+                            aria-valuemax="100">
+
+                        </div>
+
+                    </div>
+
+                    <div class="progress-value">
+
+                        {{ skill.percentage }}%
+
+                    </div>
+
+                    <!-- Circular Progress -->
+
+                    <div class="circle-progress">
+
+                        <div
+                            class="circle"
+                            [attr.data-value]="skill.percentage + '%'">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===============================
+                FEATURED SKILLS
+        ================================ -->
+
+        <div class="featured-skills">
+
+            <div class="row">
+
+                <div
+                    class="col-lg-3 col-md-6 mb-4"
+                    *ngFor="let item of featuredSkills; trackBy: trackByFeatured">
+
+                    <div
+                        class="featured-card"
+                        data-aos="fade-up">
+
+                        <i [class]="item.icon"></i>
+
+                        <h5>
+
+                            {{ item.title }}
+
+                        </h5>
+
+                        <p>
+
+                            {{ item.description }}
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,1 +1,223 @@
-<p>about works!</p>
+<!-- ===========================
+        ABOUT SECTION
+=========================== -->
+
+<section id="about" class="about-section">
+
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+
+            <span class="section-subtitle">
+                <!-- Subtitle -->
+            </span>
+
+            <h2 class="section-title">
+                <!-- About Me -->
+            </h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+        <div class="row align-items-center mt-5">
+
+            <!-- ================= LEFT IMAGE ================= -->
+
+            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+
+                <div class="about-image-wrapper">
+
+                    <div class="image-border"></div>
+
+                    <div class="about-image">
+
+                        <div class="image-placeholder">
+
+                            <i class="fas fa-user"></i>
+
+                            <h5>Profile Image</h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-one">
+
+                        <!-- Floating Card -->
+
+                    </div>
+
+                    <div class="floating-card card-two">
+
+                        <!-- Floating Card -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= RIGHT CONTENT ================= -->
+
+            <div class="col-lg-7" data-aos="fade-left">
+
+                <div class="about-content">
+
+                    <h3 class="about-heading">
+
+                        <!-- Heading Placeholder -->
+
+                    </h3>
+
+                    <p class="about-text">
+
+                        <!-- About Description -->
+
+                    </p>
+
+                    <p class="about-text">
+
+                        <!-- About Description -->
+
+                    </p>
+
+                </div>
+
+                <!-- ================= INFO CARDS ================= -->
+
+                <div class="row mt-4">
+
+                    <div
+                        class="col-md-6 mb-3"
+                        *ngFor="let item of infoCards">
+
+                        <div class="info-card">
+
+                            <h6>{{ item.label }}</h6>
+
+                            <p>{{ item.value }}</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= STATISTICS ================= -->
+
+        <div class="statistics mt-5">
+
+            <div class="row">
+
+                <div
+                    class="col-lg-3 col-md-6 mb-4"
+                    *ngFor="let stat of statistics">
+
+                    <div
+                        class="stat-card"
+                        data-aos="zoom-in">
+
+                        <i [class]="stat.icon"></i>
+
+                        <h3>{{ stat.count }}+</h3>
+
+                        <p>{{ stat.title }}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= TIMELINE ================= -->
+
+        <div class="timeline-section mt-5">
+
+            <div class="section-header text-center">
+
+                <h3>Journey Timeline</h3>
+
+            </div>
+
+            <div class="timeline">
+
+                <div
+                    *ngFor="let item of timeline"
+                    class="timeline-item"
+                    [ngClass]="item.position">
+
+                    <div
+                        class="timeline-content"
+                        data-aos="fade-up">
+
+                        <span class="timeline-year">
+
+                            {{ item.year }}
+
+                        </span>
+
+                        <h5>
+
+                            {{ item.title }}
+
+                        </h5>
+
+                        <p>
+
+                            {{ item.description }}
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= ACHIEVEMENTS ================= -->
+
+        <div class="achievement-section mt-5">
+
+            <div class="row">
+
+                <div
+                    class="col-lg-4 mb-4"
+                    *ngFor="let item of achievements">
+
+                    <div class="achievement-card">
+
+                        <i [class]="item.icon"></i>
+
+                        <h5>
+
+                            {{ item.title }}
+
+                        </h5>
+
+                        <p>
+
+                            {{ item.description }}
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
