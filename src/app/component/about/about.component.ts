@@ -38,20 +38,20 @@ export class AboutComponent implements OnInit {
 
   infoCards: InfoCard[] = [
     {
-      label: 'Label',
-      value: 'Value'
+      label: '01. EXPERIENCE',
+      value: '1.8+ Years'
     },
     {
-      label: 'Label',
-      value: 'Value'
+      label: '02. SPECIALIZATION',
+      value: ' UI & Angular '
     },
     {
-      label: 'Label',
-      value: 'Value'
+      label: '03. PROJECTS',
+      value: '3+ Completed'
     },
     {
-      label: 'Label',
-      value: 'Value'
+      label: '│04. FOCUS ',
+      value: 'Clean & Responsive'
     }
   ];
 

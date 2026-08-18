@@ -4,12 +4,13 @@
 
 :root{
 
---primary:#2563eb;
---secondary:#7c3aed;
+--primary:#492222;
+--secondary:#4e3232;
+--tercolor:rgb(237, 175, 139);
 
 --background:#ffffff;
 
---surface:#f5f5f5;
+--surface:#694848c0;
 
 --text:#222;
 
@@ -22,15 +23,16 @@
 
 .dark{
 
---background:#0f172a;
+--background:#473220;
 
---surface:#1e293b;
+--surface:#eeb98a;
 
---text:#ffffff;
+--text:#f9cea3;
+--text2:#ffffff;
 
---card:#1e293b;
+--card:#3e1e02;
 
---shadow:0 10px 30px rgba(0,0,0,.45);
+--shadow:0 10px 30px rgba(248, 193, 134, 0.45);
 
 }
 

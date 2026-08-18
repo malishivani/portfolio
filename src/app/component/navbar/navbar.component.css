@@ -14,7 +14,7 @@ transition:.3s;
 
 .dark .custom-navbar{
 
-background:rgba(15,23,42,.9);
+background:var(--background);
 
 }
 
@@ -50,7 +50,7 @@ width:0;
 
 height:2px;
 
-background:#2563eb;
+background:var(--primary);
 
 transition:.3s;
 
@@ -72,9 +72,9 @@ height:42px;
 
 border-radius:50%;
 
-background:#2563eb;
+background:var(--primary);
 
-color:#fff;
+color:var(--tercolor);
 
 }
 
