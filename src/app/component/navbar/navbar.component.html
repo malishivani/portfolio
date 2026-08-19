@@ -1,16 +1,14 @@
-<p>navbar works!</p>
+
 <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-
 <div class="container">
-
 <a class="navbar-brand" href="#">
 
-LOGO
+<i class="fa fa-user-circle" aria-hidden="true"></i>
 
 </a>
 
 <button
-class="navbar-toggler"
+class="navbar-toggler tog-btn"
 
 type="button"
 
@@ -29,24 +27,12 @@ id="menu">
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-
-<a href="#hero" class="nav-link">
-
-Home
-
-</a>
-
+<li class=" nav-item">
+<a href="#hero" class="nav-link">Home</a>
 </li>
 
-<li class="nav-item">
-
-<a href="#about" class="nav-link">
-
-About
-
-</a>
-
+<li class="  nav-item">
+<a href="#about" class="nav-link">About</a>
 </li>
 
 <li class="nav-item">
@@ -54,6 +40,15 @@ About
 <a href="#skills" class="nav-link">
 
 Skills
+
+</a>
+
+</li>
+<li class="nav-item">
+
+<a href="#education" class="nav-link">
+
+education
 
 </a>
 
@@ -83,10 +78,13 @@ Contact
 
 <button
 class="theme-btn"
+(click)="toggleTheme()"
+aria-label="Toggle theme">
 
-(click)="toggleTheme()">
-
-<i class="fas fa-moon"></i>
+<i class="fas"
+[class.fa-sun]="themeService.darkMode"
+[class.fa-moon]="!themeService.darkMode"></i>
+  <!-- <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i> -->
 
 </button>
 

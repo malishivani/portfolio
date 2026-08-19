@@ -9,11 +9,10 @@ import { ThemeService } from 'src/app/service/theme.service';
 })
 export class NavbarComponent {
 
-  constructor(public theme:ThemeService){}
+ 
+  constructor(public themeService: ThemeService) {}
 
-toggleTheme(){
-
-this.theme.toggleTheme();
-
-}
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+  }
 }

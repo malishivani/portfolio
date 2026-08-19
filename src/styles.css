@@ -1,123 +1,114 @@
-/* You can add global styles to this file, and also import other style files */
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --primary: #421702;
+    --secondary: #f27f0c;
+    --tertiary: rgb(9, 8, 7);
 
-:root{
+    --background: #f0d5c7;
+    --background2: #f07a1a;
+    --surface: #f28f058b;
+    --surface2: #020202f0;
 
---primary:#492222;
---secondary:#4e3232;
---tercolor:rgb(237, 175, 139);
+    --text: #421702;
+    --text2: #f07a1a;
+    --text3: #f1d1b6;
+    --text-muted: #6b4a4a;
 
---background:#ffffff;
+    --card: #432107;
+    --card2: #ff9603;
 
---surface:#694848c0;
 
---text:#222;
+    --shadow: 0 8px 25px #f06b06f4;
+    --skills-card-shadow: var(--shadow);
 
---card:#ffffff;
+    --transition: .4s;
+    --hero-bg:linear-gradient(135deg, #f1d6c9ac, #ff8a14af);
+}   
 
---shadow:0 8px 25px rgba(0,0,0,.08);
+/* DARK MODE */
+body.dark {
+    --primary: #f27f0c;
+    --secondary: #f27f0c;
+    --tertiary: #fb9d67;
 
---transition:.4s;
+    --background: #363534 ;
+    --background2: #ff9603;
+
+    --surface: #432e24;
+     --surface2: #020202f0;
+
+    --text: #e2a586;
+     --text2: #f07a1a;
+     --text3: #432e24;
+    --text-muted: #f1d2bf;
+
+    --card: #8b4a04d6;
+    --card2: #381902;
+
+    --shadow: 0 10px 30px rgba(84, 52, 12, 0.644);
+    --skills-card-shadow: none;
+     --hero-bg: linear-gradient(
+        135deg,
+        #7e4a30,
+        #421702
+    );
 }
 
-.dark{
+body {
+    font-family: 'Poppins', sans-serif;
 
---background:#473220;
+    background: var(--background);
+    color: var(--text);
 
---surface:#eeb98a;
+    transition:
+        background 0.5s ease,
+        color 0.5s ease;
 
---text:#f9cea3;
---text2:#ffffff;
-
---card:#3e1e02;
-
---shadow:0 10px 30px rgba(248, 193, 134, 0.45);
-
+    overflow-x: hidden;
 }
 
-*{
+/*----------- HERO---------- */
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #fff1d1,
+        #fbfafa
+    );
 
-margin:0;
+    color: var(--text);
 
-padding:0;
-
-box-sizing:border-box;
-
-scroll-behavior:smooth;
-
+    transition:
+        background 0.5s ease,
+        color 0.5s ease;
 }
 
-body{
-
-font-family:'Poppins',sans-serif;
-
-background:var(--background);
-
-color:var(--text);
-
-transition:var(--transition);
-
-overflow-x:hidden;
-
+/* HERO DARK MODE */
+body.dark .hero-section {
+    background: linear-gradient(
+        135deg,
+        #271d07,
+        #300b0b
+    );
 }
 
-section{
 
-padding:90px 0;
 
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 20px;
+
+    background: var(--card);
+    color: var(--text);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease,
+        box-shadow 0.4s ease,
+        transform 0.3s ease;
 }
 
-.container{
-
-max-width:1200px;
-
-margin:auto;
-
-}
-
-img{
-
-max-width:100%;
-
-display:block;
-
-}
-
-a{
-
-text-decoration:none;
-
-}
-
-button{
-
-border:none;
-
-outline:none;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-.card{
-
-border:none;
-
-border-radius:20px;
-
-background:var(--card);
-
-box-shadow:var(--shadow);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
+.card:hover {
+    transform: translateY(-8px);
 }

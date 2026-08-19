@@ -1,0 +1,101 @@
+/* ==========================================
+   TIMELINE
+========================================== */
+.edu-section{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+ background:var(--hero-bg);
+
+}
+h1 .section-header{
+    color: var(--text);
+    font-weight: 600;
+}
+.timeline {
+
+  position: relative;
+
+  margin-top: 40px;
+
+}
+
+.timeline::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  width: 4px;
+
+  height: 100%;
+
+  background: var(--primary);
+
+  transform: translateX(-50%);
+
+}
+
+.timeline-item {
+
+  width: 50%;
+
+  padding: 20px 40px;
+
+  position: relative;
+
+}
+
+.timeline-item.left {
+
+  left: 0;
+
+  text-align: right;
+
+}
+
+.timeline-item.right {
+
+  left: 50%;
+
+}
+
+.timeline-content {
+
+  background: var(--card);
+ color: var(--text3);
+  padding: 25px;
+
+  border-radius: 20px;
+
+  box-shadow: var(--shadow);
+
+  transition: .4s;
+
+}
+
+.timeline-content:hover {
+
+  transform: translateY(-8px);
+
+}
+
+.timeline-year {
+
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: var(--background);
+
+  color: var(--text2);
+
+  font-size: 14px;
+font-weight: bold;
+  margin-bottom: 15px;
+
+}

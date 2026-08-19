@@ -15,10 +15,11 @@
 
 .section-header {
   margin-bottom: 50px;
+  color: var(--text);
 }
 
 .section-subtitle {
-  color: var(--primary);
+  color: var(--text2);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 14px;
@@ -29,6 +30,7 @@
   font-size: 42px;
   font-weight: 700;
   margin-top: 10px;
+  color: var(--primary);
 }
 
 .title-line {
@@ -36,7 +38,7 @@
   height: 4px;
   margin: 20px auto;
   border-radius: 50px;
-  background: linear-gradient(90deg,#2563eb,#7c3aed);
+  background: linear-gradient(90deg,#5c2a02,#c26f03);
 }
 
 /* ===========================================
@@ -59,15 +61,16 @@
 
   border: none;
 
-  background: var(--card);
+  background: var(--card2);
 
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 
 }
 
 .search-box input:focus {
 
-  box-shadow: 0 0 0 3px rgba(37,99,235,.2);
+  box-shadow: var(--shadow);
+  background-color: var(--background);
 
 }
 
@@ -79,7 +82,7 @@
 
   top: 18px;
 
-  color: var(--primary);
+  color: var(--tertiary);
 
   font-size: 18px;
 
@@ -109,7 +112,7 @@
 
   border-radius: 50px;
 
-  background: var(--card);
+  background: var(--background2);
 
   color: var(--text);
 
@@ -127,13 +130,13 @@
 
   background: var(--primary);
 
-  color: white;
+  color: var(--text2);
 
 }
 
 .filter-btn.active {
 
-  background: linear-gradient(90deg,#2563eb,#7c3aed);
+  background: linear-gradient(90deg,#5c2a02,#c26f03);
 
   color: white;
 
@@ -151,10 +154,10 @@
 
   padding: 30px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--skills-card-shadow);
 
   text-align: center;
-
+ color: var(--text2);
   transition: .4s;
 
   position: relative;
@@ -164,6 +167,7 @@
   height: 100%;
 
 }
+
 
 .skill-card::before {
 
@@ -179,7 +183,7 @@
 
   height: 5px;
 
-  background: linear-gradient(90deg,#2563eb,#7c3aed);
+  /* background: linear-gradient(90deg,#5c2a02,#c26f03); */
 
   transition: .4s;
 
@@ -217,7 +221,7 @@
 
   justify-content: center;
 
-  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  background: linear-gradient(90deg,#5c2a02,#c26f03);
 
   color: white;
 
@@ -251,9 +255,9 @@
 
   display: inline-block;
 
-  background: rgba(37,99,235,.1);
+  background: var(--background2);
 
-  color: var(--primary);
+  color: var(--background);
 
   padding: 6px 15px;
 
@@ -279,20 +283,19 @@
 
   overflow: hidden;
 
-  background: #d8d8d8;
+  background: #f7b589;
 
 }
 
 .dark .progress {
 
-  background: #374151;
+  background: #533e24;
 
 }
 
 .progress-bar {
 
-  background: linear-gradient(90deg,#2563eb,#7c3aed);
-
+ background: linear-gradient(90deg,#5c2a02,#f6a234);
   transition: width 1.2s ease;
 
 }
@@ -303,7 +306,7 @@
 
   font-weight: 700;
 
-  color: var(--primary);
+  color: var(--background);
 
 }
 /* ===========================================
@@ -327,10 +330,10 @@
     border-radius: 50%;
 
     background: conic-gradient(
-        #2563eb 0deg,
-        #7c3aed 240deg,
-        #e5e7eb 240deg,
-        #e5e7eb 360deg
+        #5c2a02 0deg,
+        #9c4f0f 240deg,
+        #e27b26 240deg,
+        #f5b683 360deg
     );
 
     display: flex;
@@ -341,7 +344,7 @@
 
     font-weight: 700;
 
-    color: var(--primary);
+    color: var(--background);
 
     transition: .4s;
 }
@@ -376,7 +379,7 @@
 
     font-weight:700;
 
-    color:var(--text);
+    color:var(--text2);
 
 }
 
@@ -398,7 +401,7 @@
 
 .featured-card{
 
-    background:var(--card);
+    background:var(--card2);
 
     border-radius:25px;
 
@@ -406,7 +409,7 @@
 
     text-align:center;
 
-    box-shadow:var(--shadow);
+    box-shadow:var(--skills-card-shadow);
 
     transition:.4s;
 
@@ -432,7 +435,7 @@
     width:100%;
     height:5px;
 
-    background:linear-gradient(90deg,#2563eb,#7c3aed);
+    background:var(--background2);
 
     transform:scaleX(0);
 
@@ -473,7 +476,7 @@
 
     color:white;
 
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    background: linear-gradient(135deg,#291301,#c26f03);
 
     margin-bottom:25px;
 
@@ -496,7 +499,7 @@
     font-size:22px;
 
     font-weight:700;
-
+ color: var(--text);
     margin-bottom:15px;
 
 }
@@ -504,14 +507,8 @@
 .featured-card p{
 
     line-height:1.8;
-
-    color:#666;
-
-}
-
-.dark .featured-card p{
-
-    color:#d1d5db;
+ color: var(--primary);
+    color:var(--text-muted);
 
 }
 
@@ -528,7 +525,7 @@
     width:250px;
     height:250px;
 
-    background:rgba(37,99,235,.08);
+    background:rgba(235, 133, 37, 0.351);
 
     border-radius:50%;
 
@@ -614,50 +611,50 @@
 
 .dark .skills-section{
 
-    background:#0f172a;
+    background:var(--background);
 
 }
 
 .dark .skill-card,
 .dark .featured-card{
 
-    background:#1e293b;
+    background:var(--card);
 
-    color:#ffffff;
+    color:var(--text);
 
 }
 
 .dark .filter-btn{
 
-    background:#334155;
+    background:var(--card);
 
-    color:#ffffff;
+    color:var(--text);
 
 }
 
 .dark .filter-btn.active{
 
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    background: linear-gradient(90deg,#5c2a02,#c26f03);
 
 }
 
 .dark .search-box input{
 
-    background:#334155;
+    background:var(--card);
 
-    color:#ffffff;
+    color:var(--text);
 
 }
 
 .dark .search-box input::placeholder{
 
-    color:#cbd5e1;
+    color:var(--text-muted);
 
 }
 
 .dark .circle::before{
 
-    background:#1e293b;
+    background:var(--card);
 
 }
 
@@ -667,13 +664,23 @@
 
 .skill-card:hover{
 
-    box-shadow:0 25px 45px rgba(37,99,235,.18);
+    box-shadow:0 25px 45px rgba(235, 153, 37, 0.18);
 
 }
 
 .featured-card:hover{
 
-    box-shadow:0 25px 45px rgba(124,58,237,.18);
+    box-shadow:0 25px 45px rgba(237, 156, 58, 0.18);
+
+}
+
+/* Cards remain flat in dark mode. */
+body.dark .skill-card,
+body.dark .featured-card,
+body.dark .skill-card:hover,
+body.dark .featured-card:hover{
+
+    box-shadow:none;
 
 }
 
@@ -738,13 +745,13 @@
 
 .skill-card:hover .skill-icon{
 
-    box-shadow:0 0 30px rgba(37,99,235,.35);
+    box-shadow:0 0 30px rgba(235, 162, 37, 0.35);
 
 }
 
 .featured-card:hover i{
 
-    box-shadow:0 0 25px rgba(124,58,237,.35);
+    box-shadow:0 0 25px rgba(237, 150, 58, 0.35);
 
 }
 
@@ -958,7 +965,7 @@
 
 ::-webkit-scrollbar-thumb{
 
-    background:#2563eb;
+    background:#eb9c25;
 
     border-radius:10px;
 
@@ -972,7 +979,7 @@
 
 .dark ::-webkit-scrollbar-track{
 
-    background:#1e293b;
+    background:#3b2e1e;
 
 }
 

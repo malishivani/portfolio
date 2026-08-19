@@ -1,3 +1,51 @@
+/* 
+.about-section {
+    padding: 100px 0;
+    background: var(--background);
+    color: var(--text);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.section-title {
+    color: var(--text);
+}
+
+.about-heading {
+    color: var(--text);
+}
+
+.about-text {
+    color: var(--text);
+}
+
+.about-image {
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.floating-card {
+    background: var(--card);
+    color: var(--text);
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.floating-card span {
+    color: var(--text);
+}
+
+.floating-card i {
+    color: var(--primary);
+}
+
+.info-card,
+.stat-card,
+.timeline-content,
+.achievement-card {
+    background: var(--card);
+    color: var(--text);
+    box-shadow: var(--shadow);
+} */
 /* ==========================================
    ABOUT SECTION
 ========================================== */
@@ -28,6 +76,10 @@
   font-size: 42px;
   font-weight: 700;
   margin-top: 10px;
+  color: var(--primary);
+}
+body .dark .about-section{
+  color: var(--text);
 }
 
 .title-line {
@@ -35,7 +87,7 @@
   height: 4px;
   margin: 20px auto;
   border-radius: 20px;
-  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  background: var(--hero-bg);
 }
 
 /* ==========================================
@@ -93,12 +145,12 @@
   width: 150px;
   min-height: 90px;
 
-  background: rgba(255, 255, 255, .95);
-  border: 2px solid black;
+  background: var(--surface);
+  border: 2px solid var(--primary);
   border-radius: 18px;
 
   backdrop-filter: blur(20px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+  box-shadow: var(--shadow);
 
   display: flex;
   flex-direction: column;
@@ -113,7 +165,7 @@
 
 
 .dark .floating-card {
-  background: #1e293b;
+  /* background: ; */
   transition: all 0.3s ease;
 }
 
@@ -127,7 +179,7 @@
 .floating-card span {
     font-size: 14px;
     font-weight: 600;
-    color: #1e293b;
+    color: var(--text);
     text-align: center;
     line-height: 1.2;
 }
@@ -182,7 +234,7 @@
   font-weight: 700;
 
   margin-bottom: 20px;
-
+  color: var(--text);
 }
 
 .about-text {
@@ -193,15 +245,11 @@
 
   margin-bottom: 20px;
 
-  color: #252424;
+  color: var(--text2);
 
 }
 
-.dark .about-text {
 
-  color: var(--text);
-
-}
 
 /* ==========================================
    INFO CARD
@@ -233,7 +281,7 @@
 
   font-weight: 700;
 
-  color: var(--primary);
+  color: var(--text2);
 
   margin-bottom: 10px;
 
@@ -242,7 +290,7 @@
 .info-card p {
 
   margin: 0;
-
+ color: var(--text3);
 }
 
 /* ==========================================
@@ -299,97 +347,6 @@
 
 }
 
-/* ==========================================
-   TIMELINE
-========================================== */
-
-.timeline {
-
-  position: relative;
-
-  margin-top: 40px;
-
-}
-
-.timeline::before {
-
-  content: "";
-
-  position: absolute;
-
-  left: 50%;
-
-  width: 4px;
-
-  height: 100%;
-
-  background: var(--primary);
-
-  transform: translateX(-50%);
-
-}
-
-.timeline-item {
-
-  width: 50%;
-
-  padding: 20px 40px;
-
-  position: relative;
-
-}
-
-.timeline-item.left {
-
-  left: 0;
-
-  text-align: right;
-
-}
-
-.timeline-item.right {
-
-  left: 50%;
-
-}
-
-.timeline-content {
-
-  background: var(--card);
-
-  padding: 25px;
-
-  border-radius: 20px;
-
-  box-shadow: var(--shadow);
-
-  transition: .4s;
-
-}
-
-.timeline-content:hover {
-
-  transform: translateY(-8px);
-
-}
-
-.timeline-year {
-
-  display: inline-block;
-
-  padding: 8px 18px;
-
-  border-radius: 30px;
-
-  background: var(--primary);
-
-  color: white;
-
-  font-size: 14px;
-
-  margin-bottom: 15px;
-
-}
 
 /* ==========================================
    ACHIEVEMENT CARD

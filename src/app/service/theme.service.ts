@@ -5,29 +5,31 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-   darkMode = false;
+  darkMode = false;
+
   constructor() {
-     this.loadTheme();
-   }
+    this.loadTheme();
+  }
 
-    toggleTheme() {
-
+  toggleTheme(): void {
     this.darkMode = !this.darkMode;
 
     document.body.classList.toggle('dark', this.darkMode);
 
-    localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
+    localStorage.setItem(
+      'theme',
+      this.darkMode ? 'dark' : 'light'
+    );
   }
 
-  loadTheme() {
-
+  loadTheme(): void {
     const theme = localStorage.getItem('theme');
 
     this.darkMode = theme === 'dark';
 
-    document.body.classList.toggle('dark', this.darkMode);
-
+    document.body.classList.toggle(
+      'dark',
+      this.darkMode
+    );
   }
-
-  
 }

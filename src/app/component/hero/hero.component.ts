@@ -20,11 +20,9 @@ export class HeroComponent implements AfterViewInit {
 
       strings: [
 
-        'Placeholder One',
-
-        'Placeholder Two',
-
-        'Placeholder Three'
+        'Frontend Devloper ',
+        ' UI Devloper ',
+        ' Angular Devloper'
 
       ],
 
@@ -32,7 +30,7 @@ export class HeroComponent implements AfterViewInit {
 
       backSpeed: 40,
 
-      backDelay: 1500,
+      backDelay: 2000,
 
       loop: true
 
