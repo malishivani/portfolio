@@ -52,9 +52,10 @@
 
 .about-section {
   padding: 100px 0;
-  background: var(--background);
+  background: transparent;
   position: relative;
   overflow: hidden;
+  background: var(--background);
 }
 
 /* ==========================================
@@ -87,7 +88,7 @@ body .dark .about-section{
   height: 4px;
   margin: 20px auto;
   border-radius: 20px;
-  background: var(--hero-bg);
+  background: var(--secondary);
 }
 
 /* ==========================================
@@ -104,7 +105,7 @@ body .dark .about-section{
 .image-border {
   width: 340px;
   height: 430px;
-  border: 3px dashed var(--primary);
+  border: 3px dashed var(--tertiary);
   border-radius: 25px;
   position: absolute;
   top: 18px;
@@ -145,7 +146,7 @@ body .dark .about-section{
   width: 150px;
   min-height: 90px;
 
-  background: var(--surface);
+  
   border: 2px solid var(--primary);
   border-radius: 18px;
 
@@ -179,7 +180,7 @@ body .dark .about-section{
 .floating-card span {
     font-size: 14px;
     font-weight: 600;
-    color: var(--text);
+    color: var(--primary);
     text-align: center;
     line-height: 1.2;
 }
@@ -188,6 +189,7 @@ body .dark .about-section{
   top: 30px;
   right: -25px;
   animation: floatCard 4s infinite;
+  background: var(--surface);
 
 }
 
@@ -195,6 +197,7 @@ body .dark .about-section{
   bottom: 35px;
   left: -30px;
   animation: floatCard 5s infinite;
+  background: var(--surface);
 }
 .floating-card:hover{
   transform: translateY(-6px);
@@ -245,7 +248,7 @@ body .dark .about-section{
 
   margin-bottom: 20px;
 
-  color: var(--text2);
+  color: var(--primary);
 
 }
 
@@ -263,7 +266,8 @@ body .dark .about-section{
 
   border-radius: 20px;
 
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
+  border: 2px solid var(--secondary);
 
   transition: .4s;
 
@@ -281,7 +285,7 @@ body .dark .about-section{
 
   font-weight: 700;
 
-  color: var(--text2);
+  color: var(--text);
 
   margin-bottom: 10px;
 
@@ -290,7 +294,7 @@ body .dark .about-section{
 .info-card p {
 
   margin: 0;
- color: var(--text3);
+ color: var(--primary);
 }
 
 /* ==========================================

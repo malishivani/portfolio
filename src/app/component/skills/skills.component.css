@@ -38,7 +38,7 @@
   height: 4px;
   margin: 20px auto;
   border-radius: 50px;
-  background: linear-gradient(90deg,#5c2a02,#c26f03);
+  background: var(--hero-bg)
 }
 
 /* ===========================================
@@ -61,7 +61,7 @@
 
   border: none;
 
-  background: var(--card2);
+  background: var(--card);
 
   /* box-shadow: var(--shadow); */
 
@@ -112,13 +112,12 @@
 
   border-radius: 50px;
 
-  background: var(--background2);
+  background: var(--surface);
 
   color: var(--text);
 
   font-weight: 600;
 
-  box-shadow: var(--shadow);
 
   transition: .35s;
 
@@ -128,15 +127,17 @@
 
   transform: translateY(-4px);
 
-  background: var(--primary);
+  background: var(--background);
 
   color: var(--text2);
+
+   box-shadow: var(--shadow);
 
 }
 
 .filter-btn.active {
 
-  background: linear-gradient(90deg,#5c2a02,#c26f03);
+  background:var(--hero-bg);
 
   color: white;
 
@@ -154,7 +155,7 @@
 
   padding: 30px;
 
-  box-shadow: var(--skills-card-shadow);
+  /* box-shadow: var(--shadow); */
 
   text-align: center;
  color: var(--text2);
@@ -198,6 +199,7 @@
 .skill-card:hover {
 
   transform: translateY(-10px);
+  
 
 }
 
@@ -221,7 +223,7 @@
 
   justify-content: center;
 
-  background: linear-gradient(90deg,#5c2a02,#c26f03);
+  background:var(--hero-bg);
 
   color: white;
 
@@ -246,7 +248,7 @@
 .skill-card h4 {
 
   font-weight: 700;
-
+ color: var(--text);
   margin-bottom: 10px;
 
 }
@@ -257,7 +259,7 @@
 
   background: var(--background2);
 
-  color: var(--background);
+  color: var(--text);
 
   padding: 6px 15px;
 
@@ -283,19 +285,19 @@
 
   overflow: hidden;
 
-  background: #f7b589;
+  background: var(--card2);
 
 }
 
-.dark .progress {
+/* .dark .progress {
 
-  background: #533e24;
+   background: var(--se); 
 
-}
+} */
 
 .progress-bar {
 
- background: linear-gradient(90deg,#5c2a02,#f6a234);
+ background: var(--hero-bg);
   transition: width 1.2s ease;
 
 }
@@ -306,7 +308,7 @@
 
   font-weight: 700;
 
-  color: var(--background);
+  color: var(--primary);
 
 }
 /* ===========================================
@@ -330,10 +332,10 @@
     border-radius: 50%;
 
     background: conic-gradient(
-        #5c2a02 0deg,
-        #9c4f0f 240deg,
-        #e27b26 240deg,
-        #f5b683 360deg
+        #f90493 0deg,
+        #feb1de 240deg,
+        #a48ff9 240deg,
+        #cabbfb 360deg
     );
 
     display: flex;
@@ -344,7 +346,7 @@
 
     font-weight: 700;
 
-    color: var(--background);
+    color: var(--primary);
 
     transition: .4s;
 }
@@ -379,7 +381,7 @@
 
     font-weight:700;
 
-    color:var(--text2);
+    color:var(--primary);
 
 }
 
@@ -409,7 +411,7 @@
 
     text-align:center;
 
-    box-shadow:var(--skills-card-shadow);
+    /* box-shadow:var(--skills-card-shadow); */
 
     transition:.4s;
 
@@ -476,7 +478,7 @@
 
     color:white;
 
-    background: linear-gradient(135deg,#291301,#c26f03);
+    background: var(--hero-bg);
 
     margin-bottom:25px;
 
@@ -525,7 +527,7 @@
     width:250px;
     height:250px;
 
-    background:rgba(235, 133, 37, 0.351);
+    background:var(--tertiary);
 
     border-radius:50%;
 
@@ -551,12 +553,12 @@
     width:180px;
     height:180px;
 
-    background:rgba(124,58,237,.08);
+    background:rgba(90, 5, 238, 0.355);
 
     border-radius:50%;
 
-    bottom:-100px;
-    left:-100px;
+    bottom:-50px;
+    left:-50px;
 
     transition:.5s;
 
@@ -634,7 +636,7 @@
 
 .dark .filter-btn.active{
 
-    background: linear-gradient(90deg,#5c2a02,#c26f03);
+    background: var(--hero-bg);
 
 }
 

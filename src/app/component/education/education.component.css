@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
- background:var(--hero-bg);
+ background:var(--background);
 
 }
 h1 .section-header{
@@ -15,7 +15,7 @@ h1 .section-header{
 .timeline {
 
   position: relative;
-
+  
   margin-top: 40px;
 
 }
@@ -64,13 +64,13 @@ h1 .section-header{
 
 .timeline-content {
 
-  background: var(--card);
- color: var(--text3);
+  background: var(--hero-bg);
+ color: var(--primary);
   padding: 25px;
 
   border-radius: 20px;
 
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 
   transition: .4s;
 

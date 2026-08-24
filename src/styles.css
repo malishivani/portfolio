@@ -1,62 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 :root {
-    --primary: #421702;
-    --secondary: #f27f0c;
-    --tertiary: rgb(9, 8, 7);
+    --primary: #060606;
+    --secondary: #6070edac;
+    --tertiary:#ed60868a;
 
-    --background: #f0d5c7;
-    --background2: #f07a1a;
-    --surface: #f28f058b;
-    --surface2: #020202f0;
+    --background: #f5f1ef;
+    --background2: #6070ed;
+    --background3: #ed6086;
+    --surface: linear-gradient(90deg,#514bf7ae,#f70abca0);;
+    /* --surface2: #ed6086a5; */
 
-    --text: #421702;
-    --text2: #f07a1a;
+    --text: #6070ed;
+    --text2: #ed6086;
     --text3: #f1d1b6;
     --text-muted: #6b4a4a;
 
-    --card: #432107;
-    --card2: #ff9603;
+    --card: #fbb6c998;
+    --card2: #b7bef88e;
 
 
-    --shadow: 0 8px 25px #f06b06f4;
+     --shadow: 0 10px 30px #fa76ba;
     --skills-card-shadow: var(--shadow);
 
     --transition: .4s;
-    --hero-bg:linear-gradient(135deg, #f1d6c9ac, #ff8a14af);
-}   
+    --hero-bg:  linear-gradient(90deg,#504bf7,#c20392);
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
 
 /* DARK MODE */
 body.dark {
-    --primary: #f27f0c;
-    --secondary: #f27f0c;
-    --tertiary: #fb9d67;
+    --primary: #b0afae;
+    --secondary: #1830e8;
+    --tertiary: #fa3d6f;
 
-    --background: #363534 ;
-    --background2: #ff9603;
+    --background: #4c4a4a ;
+    --background2: #1830e8;
+    --background३: #fa3d6f;
 
-    --surface: #432e24;
-     --surface2: #020202f0;
+   
+   /* --surface: #ed6086a5; */
+    /* --surface2: #b5bdf8bd; */
 
-    --text: #e2a586;
-     --text2: #f07a1a;
-     --text3: #432e24;
+     --text: #6070ed;
+    --text2: #ed6086;
+    --text3: #f1d1b6;
     --text-muted: #f1d2bf;
 
-    --card: #8b4a04d6;
-    --card2: #381902;
+    --card: #fbb6c998;
+    --card2: #b7bef88e;
 
-    --shadow: 0 10px 30px rgba(84, 52, 12, 0.644);
+   
+    --shadow: 0 10px 30px #b7bef8f8;
     --skills-card-shadow: none;
-     --hero-bg: linear-gradient(
-        135deg,
-        #7e4a30,
-        #421702
-    );
+     --hero-bg:  linear-gradient(90deg,#504bf7,#c20392);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 
-    background: var(--background);
+    /* background: var(--background); */
     color: var(--text);
 
     transition:
@@ -70,8 +80,8 @@ body {
 .hero-section {
     background: linear-gradient(
         135deg,
-        #fff1d1,
-        #fbfafa
+        #8b99fda4,
+        #fbf9fa
     );
 
     color: var(--text);
@@ -83,11 +93,11 @@ body {
 
 /* HERO DARK MODE */
 body.dark .hero-section {
-    background: linear-gradient(
+    /* background: linear-gradient(
         135deg,
         #271d07,
         #300b0b
-    );
+    ); */
 }
 
 
