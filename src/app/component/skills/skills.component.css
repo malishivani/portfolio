@@ -4,9 +4,10 @@
 
 .skills-section {
   padding: 100px 0;
-  background: var(--background);
+  background: transparent;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* ===========================================
@@ -152,13 +153,13 @@
   background: var(--card);
 
   border-radius: 25px;
-
-  padding: 30px;
+  max-height: 300px;
+  padding: 20px;
+  /* border: 1px solid black; */
 
   /* box-shadow: var(--shadow); */
-
   text-align: center;
- color: var(--text2);
+ color: var(--card);
   transition: .4s;
 
   position: relative;
@@ -225,11 +226,11 @@
 
   background:var(--hero-bg);
 
-  color: white;
+  color: var(--background);
 
   font-size: 42px;
 
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 
   transition: .4s;
 
@@ -248,8 +249,8 @@
 .skill-card h4 {
 
   font-weight: 700;
- color: var(--text);
-  margin-bottom: 10px;
+ color: var(--primary);
+  margin-bottom: 5px;
 
 }
 
@@ -259,7 +260,7 @@
 
   background: var(--background2);
 
-  color: var(--text);
+  color: var(--background);
 
   padding: 6px 15px;
 
@@ -277,7 +278,7 @@
 
 .progress {
 
-  margin-top: 25px;
+  margin-top: 5px;
 
   height: 10px;
 
@@ -304,7 +305,7 @@
 
 .progress-value {
 
-  margin-top: 10px;
+  margin-top: 1px;
 
   font-weight: 700;
 
@@ -315,19 +316,19 @@
    CIRCULAR PROGRESS
 =========================================== */
 
-.circle-progress {
+/* .circle-progress {
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 25px;
-}
+    margin-top: 2px;
+} */
 
-.circle {
+/* .circle {
 
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
 
     border-radius: 50%;
 
@@ -349,24 +350,24 @@
     color: var(--primary);
 
     transition: .4s;
-}
+} */
 
-.circle::before {
+/* .circle::before {
 
     content: "";
 
     position: absolute;
 
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
 
     background: var(--card);
 
     border-radius: 50%;
 
-}
+} */
 
-.circle{
+/* .circle{
 
     z-index:1;
 }
@@ -389,7 +390,7 @@
 
     transform:scale(1.08) rotate(8deg);
 
-}
+} */
 
 /* ===========================================
    FEATURED SKILLS
@@ -407,6 +408,7 @@
 
     border-radius:25px;
 
+    
     padding:35px 25px;
 
     text-align:center;

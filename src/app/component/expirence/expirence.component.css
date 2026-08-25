@@ -1,0 +1,43 @@
+.experience-section {
+    padding: 70px 0;
+    background: transparent;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.exp-card {
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.exp-head h4 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.muted {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+}

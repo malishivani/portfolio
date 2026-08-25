@@ -13,6 +13,8 @@ import { ExpirenceComponent } from '../component/expirence/expirence.component';
 import { ProjectComponent } from '../component/project/project.component';
 import { FooterComponent } from '../component/footer/footer.component';
 import { EducationComponent } from '../component/education/education.component';
+import { ContactComponent } from '../component/contact/contact.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -23,7 +25,8 @@ import { EducationComponent } from '../component/education/education.component';
     ExpirenceComponent,
     ProjectComponent,
     FooterComponent,
-    EducationComponent
+    EducationComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

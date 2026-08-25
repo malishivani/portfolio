@@ -12,12 +12,7 @@ interface Statistic {
   title: string;
 }
 
-interface Timeline {
-  year: string;
-  title: string;
-  description: string;
-  position: 'left' | 'right';
-}
+
 
 interface Achievement {
   icon: string;
@@ -82,31 +77,7 @@ export class AboutComponent implements OnInit {
     }
   ];
 
-  // ============================
-  // TIMELINE
-  // ============================
-
-  timeline: Timeline[] = [
-    {
-      year: 'Year',
-      title: 'Title',
-      description: 'Description',
-      position: 'left'
-    },
-    {
-      year: 'Year',
-      title: 'Title',
-      description: 'Description',
-      position: 'right'
-    },
-    {
-      year: 'Year',
-      title: 'Title',
-      description: 'Description',
-      position: 'left'
-    }
-  ];
-
+  
   // ============================
   // ACHIEVEMENTS
   // ============================

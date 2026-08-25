@@ -1,0 +1,160 @@
+.contact-section {
+  padding: 20px 0;
+  background:transparent;
+  position:relative;
+overflow:hidden;
+min-height: 100vh;
+z-index: 1;
+
+}
+/* title */
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+
+.title-line {
+  width: 90px;
+  height: 4px;
+  margin: 20px auto;
+  border-radius: 20px;
+  background: var(--secondary);
+}
+
+
+
+.contact-content{
+    display: block;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.contact-main h2{
+ font-size: 2rem;
+}
+
+.social-icons{
+margin-top:30px;
+
+}
+
+.social-icons a{
+
+width:50px;
+
+height:50px;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:white;
+
+margin-right:15px;
+
+font-size:22px;
+
+color:var(--primary);
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+
+
+.form-title{
+    text-align: center;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.contact-form {
+  padding: 28px;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: none;
+}
+
+
+.contact-info div {
+  margin: 8px 0;
+  color: var(--primary);
+}
+
+.socials {
+  margin-top: 16px;
+}
+
+.socials a {
+  margin-right: 12px;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.contact-form .form-actions {
+  margin-top: 12px;
+  text-align: right;
+}
+
+.btn.primary {
+  background: var(--surface);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+.contact-content{
+    text-align: left;
+    padding: 20px;
+}
+
+
+.contact-info{
+    text-align: left;
+    
+}
+}

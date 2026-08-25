@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 :root {
     --primary: #060606;
-    --secondary: #6070edac;
-    --tertiary:#ed60868a;
+    --secondary: #7180f069;
+    --tertiary:#ed60865e;
 
-    --background: #f5f1ef;
+    --background: #fff;
     --background2: #6070ed;
     --background3: #ed6086;
+    
     --surface: linear-gradient(90deg,#514bf7ae,#f70abca0);;
     /* --surface2: #ed6086a5; */
 
@@ -15,7 +16,7 @@
     --text3: #f1d1b6;
     --text-muted: #6b4a4a;
 
-    --card: #fbb6c998;
+    --card: #f9e0e798;
     --card2: #b7bef88e;
 
 
@@ -37,11 +38,11 @@
 
 /* DARK MODE */
 body.dark {
-    --primary: #b0afae;
-    --secondary: #1830e8;
-    --tertiary: #fa3d6f;
+    --primary: #f4f3f1;
+    --secondary: #1830e888;
+    --tertiary: #fa3d6f58;
 
-    --background: #4c4a4a ;
+    --background: #333030 ;
     --background2: #1830e8;
     --background३: #fa3d6f;
 

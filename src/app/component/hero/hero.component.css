@@ -2,7 +2,8 @@
 position:relative;
 overflow:hidden;
 min-height: 100vh;
-background:var(--background);
+background:transparent;
+margin: 0;
 
 }
 
@@ -16,8 +17,12 @@ z-index:5;
 
 }
 
+.badge-placeholder h1{
+color: var(--text2);
+}
+
 .hero-title{
-font-size:4rem;
+font-size:6rem;
 font-weight:700;
 line-height: 1.15;
 margin-bottom:15px;
@@ -26,7 +31,7 @@ color: var(--primary);
 
 .hero-subtitle{
 min-height:45px;
-font-size:30px;
+font-size:3rem;
 font-weight: 600;
 color:var(--text);
 margin-bottom:25px;
@@ -38,6 +43,7 @@ max-width:520px;
 line-height:1.8;
 margin-bottom:35px;
 color: var(--primary);
+text-align: left;
 }
 
 /* .custom-btn{
@@ -220,13 +226,13 @@ background:#f4d7c0;
 
 from{
 
-transform:translate(-50%, -50%) scale(.9);
+transform:translate(-50%, -50%) scale(.5);
 
 }
 
 to{
 
-transform:translate(-50%, -50%) scale(1.2);
+transform:translate(-50%, -50%) scale(0.9);
 
 }
 
@@ -280,9 +286,9 @@ width:180px;
 
 height:180px;
 
-top:10%;
+top:30%;
 
-left:5%;
+right:10%;
 
 }
 
@@ -292,7 +298,7 @@ width:120px;
 
 height:120px;
 
-right:8%;
+left:8%;
 
 top:15%;
 
@@ -306,9 +312,9 @@ width:250px;
 
 height:250px;
 
-bottom:5%;
+bottom:15%;
 
-left:15%;
+right:30%;
 
 animation-duration:20s;
 
@@ -320,9 +326,9 @@ width:100px;
 
 height:100px;
 
-right:15%;
+right:65%;
 
-bottom:10%;
+bottom:40%;
 
 }
 
@@ -366,6 +372,9 @@ text-align:center;
 
 font-size:3rem;
 
+}
+.hero-description{
+    text-align: center;
 }
 
 .profile-wrapper{

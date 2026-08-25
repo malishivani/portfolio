@@ -2,12 +2,13 @@
 
 background:transparent;
 position: fixed;
-/* backdrop-filter:blur(20px); */
-background: transparent;
+backdrop-filter:blur(20px);
+/* background: transparent; */
 /* box-shadow:var(--shadow); */
 color: var(--primary);
 padding:15px 0;
 transition:.3s;
+margin: 0;
 
 }
 
@@ -23,7 +24,7 @@ background:var(--background);
 
 .navbar-brand{
 
-font-size:36px;
+font-size:25px;
 
 font-weight:700;
 
@@ -95,7 +96,7 @@ transform:rotate(180deg);
 position: fixed;
 display: block;
 backdrop-filter:blur(20px);
-background: transparent;
+/* background: transparent; */
 /* box-shadow:var(--shadow); */
 color: var(--text);
 padding:15px 0;
