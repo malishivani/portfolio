@@ -28,7 +28,7 @@ position:absolute;
 
 border-radius:50%;
 
-background:var(--secondary);
+background:var(--card1);
 
 animation:float 12s infinite linear;
 
@@ -39,7 +39,7 @@ position:absolute;
 
 border-radius:50%;
 
-background:var(--tertiary);
+background:var(--card2);
 
 animation:float 12s infinite linear;
 

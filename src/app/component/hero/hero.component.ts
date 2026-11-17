@@ -20,9 +20,7 @@ export class HeroComponent implements AfterViewInit {
 
       strings: [
 
-        'Frontend Devloper ',
-        ' UI Devloper ',
-        ' Angular Devloper'
+        'Design Devlop Deliver'
 
       ],
 

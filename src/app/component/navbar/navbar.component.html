@@ -1,98 +1,71 @@
-
 <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-<div class="container">
-<a class="navbar-brand" href="#">
-
-<h5>Shivani Mali</h5>
-
-</a>
-
-<button
-class="navbar-toggler tog-btn"
-
-type="button"
-
-data-bs-toggle="collapse"
-
-data-bs-target="#menu">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div
-class="collapse navbar-collapse"
-
-id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class=" nav-item">
-<a href="#hero" class="nav-link">Home</a>
-</li>
-
-<li class="  nav-item">
-<a href="#about" class="nav-link">About</a>
-</li>
-
-<li class="nav-item">
-
-<a href="#project" class="nav-link">
-
-Project
-
-</a>
-
-</li>
+  <div class="container">
+    <!-- logo -->
+    <div class="navbar-brand ms-3 molle-regular-italic ">
+      <h3>Shivani Mali</h3>
+    </div>
 
 
-<li class="nav-item">
+      <ul class="navbar-nav flex-row align-item-center ms-auto">
+        <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"> <a href="#project" class="nav-link"> Project </a> </li>
+        <li class="nav-item"> <a href="#education" class="nav-link"> Education </a> </li>
+      </ul>
 
-<a href="https://www.linkedin.com/in/shivani-mali-ui-dev/" class="nav-link"  target="_blank"
-       rel="noopener noreferrer" >
+    <!-- dropdown  -->
+    <div class="d-flex align-item-center ms-auto">
+      <ul class="navbar-nav flex-row align-item-center">
+        <li class="nav-item dropdown">
+          <a
+            href="#contact"
+            class="nav-link dropdown-toggle"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            Let's Talk
+          </a>
+        </li>
 
-LinkedIn
+        <!-- dropdown menu -->
+        <ul class="dropdown-menu">
+          <li>
+            <a
+              class="dropdown-item"
+              href="https://www.linkedin.com/in/shivani-mali-ui-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn
+            </a>
+          </li>
+          <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="../../../assets/Shivani_Mali_.pdf"
+              class="dropdown-item"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
 
-</a>
-
-</li>
-
-<li class="nav-item">
-
-<a href="../../../assets/Shivani_Mali_.pdf" class="nav-link">
-
-Resume
-
-</a>
-
-</li>
-
-<li class="nav-item">
-
-<a href="#contact" class="nav-link">
-
-Contact
-
-</a>
-
-</li>
-
-</ul>
-
-<button
-class="theme-btn"
-(click)="toggleTheme()"
-aria-label="Toggle theme">
-
-<i class="fas"
-[class.fa-sun]="themeService.darkMode"
-[class.fa-moon]="!themeService.darkMode"></i>
-  <!-- <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i> -->
-
-</button>
-
-</div>
-
-</div>
-
+        <!-- theme button -->
+        <li>
+          <button
+            class="theme-btn ms-3"
+            (click)="toggleTheme()"
+            aria-label="Toggle theme"
+          >
+            <i
+              class="fas"
+              [class.fa-sun]="themeService.darkMode"
+              [class.fa-moon]="!themeService.darkMode"
+            ></i>
+            <!-- <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i> -->
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- </div> -->
 </nav>

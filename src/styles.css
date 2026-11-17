@@ -1,125 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Molle:ital@1&family=Rubik+Doodle+Shadow&display=swap");
 :root {
-    --primary: #060606;
-    --secondary: #7180f069;
-    --tertiary:#ed60865e;
+  --primary: #462008;
+  --secondary: #f37321;
+  --tertiary: #462008e3;
+  --background: #fbf5ef;
 
-    --background: #fff;
-    --background2: #6070ed;
-    --background3: #ed6086;
-    
-    --surface: linear-gradient(90deg,#514bf7ae,#f70abca0);;
-    /* --surface2: #ed6086a5; */
+  --surface: linear-gradient(90deg, #514bf7ae, #f70abca0);
+  /* --surface2: #ed6086a5; */
 
-    --text: #6070ed;
-    --text2: #ed6086;
-    --text3: #f1d1b6;
-    --text-muted: #6b4a4a;
+  --text1: #ffff;
+  --text2: #080103;
+  --text-muted: #6b4a4a;
 
-    --card: #f9e0e798;
-    --card2: #b7bef88e;
+  --card: #f36e21be;
+  --card1: #ec864b88;
+  --card2: #462008a2;
 
+  --shadow: 0 10px 30px #462008;
+  --skills-card-shadow: var(--shadow);
 
-     --shadow: 0 10px 30px #fa76ba;
-    --skills-card-shadow: var(--shadow);
-
-    --transition: .4s;
-    --hero-bg:  linear-gradient(90deg,#504bf7,#c20392);
+  --transition: 0.4s;
+  /* --hero-bg:  linear-gradient(90deg,#504bf7,#c20392); */
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -3px;
-    margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin-bottom: 25px;
 }
 
 /* DARK MODE */
 body.dark {
-    --primary: #f4f3f1;
-    --secondary: #1830e888;
-    --tertiary: #fa3d6f58;
+  --primary: #f37321;
+  --secondary: #462008;
+  --tertiary: #fa3d6f58;
 
-    --background: #333030 ;
-    --background2: #1830e8;
-    --background३: #fa3d6f;
+  --background: #000000;
 
-   
-   /* --surface: #ed6086a5; */
-    /* --surface2: #b5bdf8bd; */
+  /* --surface: #ed6086a5; */
+  /* --surface2: #b5bdf8bd; */
 
-     --text: #6070ed;
-    --text2: #ed6086;
-    --text3: #f1d1b6;
-    --text-muted: #f1d2bf;
+  --text2: #ffff;
+  --text: #080103;
+  --text-muted: #6b4a4a;
 
-    --card: #fbb6c998;
-    --card2: #b7bef88e;
+   --card: #f36e21be;
+  --card1: #ec864b88;
+  --card2: #462008a2;
 
-   
-    --shadow: 0 10px 30px #b7bef8f8;
-    --skills-card-shadow: none;
-     --hero-bg:  linear-gradient(90deg,#504bf7,#c20392);
+  --shadow: 0 10px 30px #b7bef8f8;
+  --skills-card-shadow: none;
+  --hero-bg: linear-gradient(90deg, #504bf7, #c20392);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
-    /* background: var(--background); */
-    color: var(--text);
+  /* background: var(--background); */
+  color: var(--text);
 
-    transition:
-        background 0.5s ease,
-        color 0.5s ease;
+  transition:
+    background 0.5s ease,
+    color 0.5s ease;
 
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+/* -------------------font family ---------------- */
+.molle-regular-italic {
+  font-family: "Molle", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*  */
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  for all */
+.ibm-plex-serif-extralight {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+/* for hedder */
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* handwritten */
+.dynapuff-handwritten {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /*----------- HERO---------- */
 .hero-section {
-    background: linear-gradient(
-        135deg,
-        #8b99fda4,
-        #fbf9fa
-    );
+  background: linear-gradient(135deg, #8b99fda4, #fbf9fa);
 
-    color: var(--text);
+  color: var(--text);
 
-    transition:
-        background 0.5s ease,
-        color 0.5s ease;
+  transition:
+    background 0.5s ease,
+    color 0.5s ease;
 }
 
 /* HERO DARK MODE */
 body.dark .hero-section {
-    /* background: linear-gradient(
+  /* background: linear-gradient(
         135deg,
         #271d07,
         #300b0b
     ); */
 }
 
-
-
 /* CARDS */
 .card {
-    border: none;
-    border-radius: 20px;
+  border: none;
+  border-radius: 20px;
 
-    background: var(--card);
-    color: var(--text);
+  background: var(--card);
+  color: var(--text);
 
-    box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 
-    transition:
-        background 0.4s ease,
-        color 0.4s ease,
-        box-shadow 0.4s ease,
-        transform 0.3s ease;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.4s ease,
+    transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
