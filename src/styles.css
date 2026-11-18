@@ -4,7 +4,7 @@
 :root {
   --primary: #462008;
   --secondary: #f37321;
-  --tertiary: #462008e3;
+  --tertiary: #f7911ca1;
   --background: #fbf5ef;
 
   --surface: linear-gradient(90deg, #514bf7ae, #f70abca0);
@@ -82,6 +82,11 @@ body {
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
+  font-style: normal;
+}
+.chewy-regular2 {
+  font-family: "Chewy", system-ui;
+  font-weight: 300;
   font-style: normal;
 }
 

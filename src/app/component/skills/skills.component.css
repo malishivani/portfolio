@@ -53,17 +53,11 @@
 }
 
 .search-box input {
-
   height: 55px;
-
   border-radius: 50px;
-
   padding-left: 50px;
-
-  border: none;
-
-  background: var(--card);
-
+  border: 1px solid var(--primary);
+  background: var(--background);
   /* box-shadow: var(--shadow); */
 
 }
@@ -71,20 +65,16 @@
 .search-box input:focus {
 
   box-shadow: var(--shadow);
-  background-color: var(--background);
+  background-color: var(--tertiary);
+  color: var(--text1);
 
 }
 
 .search-box i {
-
   position: absolute;
-
   left: 20px;
-
   top: 18px;
-
-  color: var(--tertiary);
-
+  color: var(--primary);
   font-size: 18px;
 
 }
@@ -94,54 +84,36 @@
 =========================================== */
 
 .filter-buttons {
-
   display: flex;
-
   justify-content: center;
-
   flex-wrap: wrap;
-
   gap: 15px;
 
 }
 
 .filter-btn {
-
   padding: 12px 30px;
-
   border: none;
-
   border-radius: 50px;
-
-  background: var(--surface);
-
+  background: var(--background);
+   border: 1px solid var(--primary);
   color: var(--text);
-
   font-weight: 600;
-
-
   transition: .35s;
-
 }
 
 .filter-btn:hover {
-
   transform: translateY(-4px);
-
-  background: var(--background);
-
-  color: var(--text2);
-
+  background: var(--tertiary);
+  color: var(--primary);
    box-shadow: var(--shadow);
 
 }
 
 .filter-btn.active {
-
-  background:var(--hero-bg);
-
-  color: white;
-
+  background:var(--primary);
+  color: var(--text1);
+  border: 2px solid var(--primary);
 }
 
 /* ===========================================
@@ -150,58 +122,42 @@
 
 .skill-card {
 
-  background: var(--card);
-
+  background: var(--background);
+  max-height: 100px;
+  padding: 2px;
+  border: 1px solid black;
   border-radius: 25px;
-  max-height: 300px;
-  padding: 20px;
-  /* border: 1px solid black; */
-
   /* box-shadow: var(--shadow); */
   text-align: center;
- color: var(--card);
+ color: var(--primary);
   transition: .4s;
-
   position: relative;
-
   overflow: hidden;
-
   height: 100%;
+  display: flex;
+  flex-direction: row;
 
 }
 
 
 .skill-card::before {
-
   content: "";
-
   position: absolute;
-
   top: 0;
-
   left: -100%;
-
   width: 100%;
-
   height: 5px;
-
   /* background: linear-gradient(90deg,#5c2a02,#c26f03); */
-
   transition: .4s;
 
 }
 
 .skill-card:hover::before {
-
   left: 0;
-
 }
 
 .skill-card:hover {
-
   transform: translateY(-10px);
-  
-
 }
 
 /* ===========================================
@@ -209,29 +165,17 @@
 =========================================== */
 
 .skill-icon {
-
-  width: 90px;
-
-  height: 90px;
-
+  width: 10px;
+  height: 10px;
   margin: auto;
-
   border-radius: 50%;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   background:var(--hero-bg);
-
   color: var(--background);
-
-  font-size: 42px;
-
+  font-size: 20px;
   margin-bottom: 5px;
-
   transition: .4s;
 
 }
@@ -246,11 +190,11 @@
    TITLE
 =========================================== */
 
-.skill-card h4 {
+.skill-card h5 {
 
-  font-weight: 700;
+  font-weight: 500;
  color: var(--primary);
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 
 }
 
@@ -278,21 +222,17 @@
 
 .progress {
 
-  margin-top: 5px;
-
+  margin-top: 1px;
   height: 10px;
-
   border-radius: 20px;
-
   overflow: hidden;
-
   background: var(--card2);
 
 }
 
 /* .dark .progress {
 
-   background: var(--se); 
+   background: var(--se);
 
 } */
 
@@ -408,7 +348,7 @@
 
     border-radius:25px;
 
-    
+
     padding:35px 25px;
 
     text-align:center;

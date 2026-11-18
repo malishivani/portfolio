@@ -4,6 +4,7 @@ overflow:hidden;
 min-height: 100vh;
 background:transparent;
 padding-top: 60px;
+margin: 0 100px;
 
 }
 
@@ -139,6 +140,81 @@ transition:transform .6s ease;
 }
 
 
+.floating-card {
+
+  position: absolute;
+  width: 200px;
+  min-height: 50px;
+  /* border: 2px solid var(--background); */
+  border-radius: 18px;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--primary);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px;
+  z-index: 5;
+
+
+}
+
+
+.dark .floating-card {
+  /* background: ; */
+  transition: all 0.3s ease;
+}
+
+/* Icon */
+.floating-card i {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* Text */
+.floating-card span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.card-one {
+  top: 30%;
+  right: 5px;
+  background-color: var(--tertiary);
+}
+.card-two {
+  top: 45%;
+  right: -80px;
+  background-color: var(--background);
+}
+.card-three {
+  top: 60%;
+  right: 5px;
+  background-color: var(--tertiary);
+}
+
+.card-four {
+  top: 75%;
+  right: -80px;
+ background-color: var(--background);
+
+}
+
+.floating-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,00.3s);
+}
+
+
+
+
 @keyframes glow{
 
 from{
@@ -248,6 +324,7 @@ transform:translateY(0) rotate(360deg);
 .hero-section{
     padding-top: 100px;
     text-align:center;
+    margin: 0 20px;
 }
 
 
